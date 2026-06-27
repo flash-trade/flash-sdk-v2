@@ -8,7 +8,7 @@ const sizeAmount = amount("SIZE_AMOUNT", "1000000");
 
 main(async (ctx) => {
   phase("resolve market + entry price");
-  const { collateralSymbol, side } = pickMarket(ctx.poolConfig);
+  const { collateralSymbol, side } = pickMarket(ctx.poolConfig, ENV.targetSymbol, ctx.client);
   const price = await entryPrice(ctx, ENV.targetSymbol, side, true);
   if (ctx.session) ctx.client.useSession(ctx.session.publicKey);
   note(`target=${ENV.targetSymbol} side=${sideName(side)} collateral=${collateralSymbol} entryPrice=${price.price.toString()}`);

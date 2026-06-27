@@ -309,6 +309,15 @@ export interface Basket {
   orders: OrderMeta[];
 }
 
+export interface BasketLedgerErLog {
+  owner: PublicKey;
+  basket: PublicKey;
+  tokenMint: PublicKey;
+  debitAmount: BN;
+  creditAmount: BN;
+  opType: number;
+}
+
 export interface BasketOrder {
   limitOrders: LimitOrder[];
   takeProfitOrders: TriggerOrder[];
@@ -1108,6 +1117,8 @@ export interface DecreasePositionSizeErLog {
   oracleAccountPriceExponent: number;
   priceImpactUsd: BN;
   deltaLockedAmount: BN;
+  outputAmount: BN;
+  outputCustodyUid: number;
   padding: BN[];
 }
 
@@ -1864,6 +1875,7 @@ export interface ForceClosePositionErLog {
   priceImpactUsd: BN;
   lockedAmount: BN;
   outputAmount: BN;
+  outputCustodyUid: number;
   padding: BN[];
 }
 
@@ -3250,6 +3262,7 @@ export interface RemoveCollateralErLog {
   finalSizeAmount: BN;
   finalSizeUsd: BN;
   receiveAmount: BN;
+  outputCustodyUid: number;
   oracleAccountTime: BN;
   oracleAccountType: number;
   oracleAccountPrice: BN;

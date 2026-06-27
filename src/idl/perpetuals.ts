@@ -5,7 +5,7 @@
  * IDL can be found at `target/idl/perpetuals.json`.
  */
 export type Perpetuals = {
-  "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o",
+  "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4",
   "metadata": {
     "name": "perpetuals",
     "version": "15.2.0",
@@ -295,7 +295,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -588,7 +588,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar"
@@ -809,7 +809,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -956,37 +956,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -1147,7 +1147,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -1155,7 +1155,7 @@ export type Perpetuals = {
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -1533,7 +1533,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         }
       ],
       "args": [
@@ -2090,7 +2090,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar"
@@ -2303,7 +2303,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -2435,37 +2435,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -2601,37 +2601,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -2795,7 +2795,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -2803,7 +2803,7 @@ export type Perpetuals = {
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -3195,7 +3195,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         }
       ],
       "args": [
@@ -3432,7 +3432,7 @@ export type Perpetuals = {
             "our program ID; the `delegate_account` CPI uses this to compute the",
             "PDA bump via `find_program_address`."
           ],
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -3476,7 +3476,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         }
       ],
       "args": [
@@ -3535,7 +3535,7 @@ export type Perpetuals = {
             "our program ID; the `delegate_account` CPI uses this to compute the PDA",
             "bump via `find_program_address`."
           ],
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -3579,7 +3579,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         }
       ],
       "args": [
@@ -3694,7 +3694,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         }
       ],
       "args": [
@@ -3914,7 +3914,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         }
       ],
       "args": [
@@ -4028,7 +4028,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         }
       ],
       "args": [
@@ -4195,7 +4195,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -4323,7 +4323,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -4451,7 +4451,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -4718,7 +4718,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -4989,7 +4989,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -5192,7 +5192,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -5364,37 +5364,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -5577,11 +5577,11 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -5846,7 +5846,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -6021,7 +6021,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -6143,37 +6143,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -6357,11 +6357,11 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -6642,7 +6642,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -6843,7 +6843,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -6975,37 +6975,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -7198,7 +7198,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -7206,7 +7206,7 @@ export type Perpetuals = {
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -7447,7 +7447,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -7664,7 +7664,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -7819,37 +7819,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -8008,7 +8008,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -8016,7 +8016,7 @@ export type Perpetuals = {
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -8263,7 +8263,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar"
@@ -8446,7 +8446,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -8541,37 +8541,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -8757,7 +8757,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -8765,7 +8765,7 @@ export type Perpetuals = {
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -9128,7 +9128,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -9371,7 +9371,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -9558,37 +9558,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -9745,11 +9745,11 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -10014,7 +10014,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -10078,37 +10078,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -10238,11 +10238,11 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -10332,37 +10332,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -10473,11 +10473,11 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -10567,37 +10567,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -10735,11 +10735,11 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -10832,37 +10832,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -10973,11 +10973,11 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -11064,37 +11064,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -11205,11 +11205,11 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -11296,37 +11296,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -11459,7 +11459,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "systemProgram",
@@ -11467,7 +11467,7 @@ export type Perpetuals = {
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -11550,37 +11550,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -11691,11 +11691,11 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -11782,37 +11782,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -11923,11 +11923,11 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -12144,7 +12144,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         }
       ],
       "args": [
@@ -12383,7 +12383,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -12602,7 +12602,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -12728,37 +12728,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -12891,37 +12891,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -13082,7 +13082,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -13090,7 +13090,7 @@ export type Perpetuals = {
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -13298,7 +13298,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "tokenMint"
@@ -13594,7 +13594,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -13826,7 +13826,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -14121,7 +14121,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -14416,7 +14416,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -14683,7 +14683,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -14931,7 +14931,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -19931,7 +19931,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -20044,7 +20044,7 @@ export type Perpetuals = {
         },
         {
           "name": "perpetualsProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "perpetualsProgramData"
@@ -20650,37 +20650,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -20824,11 +20824,11 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -22358,7 +22358,15 @@ export type Perpetuals = {
           }
         },
         {
-          "name": "targetOracleAccount"
+          "name": "targetOracleAccount",
+          "docs": [
+            "the internal oracle only (the delegated CustomOracle), matching the",
+            "trade-execution paths (open/close/increase/decrease/execute). The external",
+            "Pyth account is not delegated to the ER — it is only a validator-maintained",
+            "clone — so accepting it here would let a permissionless liquidation price",
+            "the position from a source that diverges from the one it was opened/valued",
+            "against."
+          ]
         },
         {
           "name": "lockOracleAccount"
@@ -22394,7 +22402,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -22666,7 +22674,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar"
@@ -22862,7 +22870,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -22989,37 +22997,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -23170,37 +23178,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -23354,7 +23362,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -23362,7 +23370,7 @@ export type Perpetuals = {
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -23510,7 +23518,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -23777,7 +23785,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -24501,7 +24509,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar"
@@ -24700,7 +24708,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -24869,37 +24877,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -25055,7 +25063,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -25063,7 +25071,7 @@ export type Perpetuals = {
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -25368,7 +25376,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -25652,7 +25660,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -25908,37 +25916,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -26099,11 +26107,11 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -26403,7 +26411,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -26725,7 +26733,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -26983,7 +26991,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -27163,7 +27171,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -27275,7 +27283,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -27415,7 +27423,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -27683,7 +27691,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -27975,7 +27983,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar"
@@ -28199,7 +28207,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -28347,37 +28355,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -28536,7 +28544,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -28544,7 +28552,7 @@ export type Perpetuals = {
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -29018,7 +29026,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -29253,7 +29261,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         }
       ],
       "args": [],
@@ -29564,7 +29572,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar"
@@ -29779,7 +29787,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -29952,37 +29960,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -30144,7 +30152,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -30152,7 +30160,7 @@ export type Perpetuals = {
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -30523,7 +30531,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -30614,7 +30622,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         }
       ],
       "args": [],
@@ -31385,7 +31393,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -31716,7 +31724,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -32111,7 +32119,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -32488,7 +32496,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -32686,7 +32694,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -33061,7 +33069,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -33137,7 +33145,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         }
       ],
       "args": [
@@ -33425,7 +33433,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         }
       ],
       "args": [
@@ -33750,7 +33758,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -33980,7 +33988,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -34369,7 +34377,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar"
@@ -34582,7 +34590,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -34770,37 +34778,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -34957,7 +34965,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -34965,7 +34973,7 @@ export type Perpetuals = {
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -35256,7 +35264,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar"
@@ -35439,7 +35447,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -35616,7 +35624,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -35833,7 +35841,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -35977,37 +35985,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -36170,7 +36178,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -36178,7 +36186,7 @@ export type Perpetuals = {
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -37343,7 +37351,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -38040,7 +38048,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -38251,7 +38259,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -38406,37 +38414,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -38589,7 +38597,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ixSysvar",
@@ -38597,7 +38605,7 @@ export type Perpetuals = {
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -38997,7 +39005,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "magicProgram",
@@ -39276,7 +39284,7 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "escrowAuth"
@@ -39522,37 +39530,37 @@ export type Perpetuals = {
               "kind": "const",
               "value": [
                 214,
-                204,
-                104,
-                155,
-                243,
-                208,
-                253,
-                25,
-                179,
-                187,
-                55,
-                183,
-                250,
-                182,
-                225,
-                64,
-                171,
-                139,
-                128,
-                33,
-                192,
-                109,
-                235,
+                198,
                 6,
-                123,
-                68,
-                50,
+                12,
+                71,
+                119,
                 246,
-                25,
-                146,
-                169,
-                214
+                149,
+                182,
+                125,
+                132,
+                248,
+                94,
+                6,
+                94,
+                60,
+                103,
+                48,
+                134,
+                153,
+                47,
+                126,
+                11,
+                19,
+                148,
+                211,
+                154,
+                51,
+                194,
+                145,
+                217,
+                15
               ]
             }
           }
@@ -39712,11 +39720,11 @@ export type Perpetuals = {
         },
         {
           "name": "program",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "ownerProgram",
-          "address": "FTV2b19zzfDKkmJZsVz2qEkwHpVKQ6GxQyBa7xhhsD5o"
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
         },
         {
           "name": "delegationProgram",
@@ -40451,6 +40459,19 @@ export type Perpetuals = {
         66,
         153,
         80
+      ]
+    },
+    {
+      "name": "basketLedgerErLog",
+      "discriminator": [
+        196,
+        124,
+        93,
+        238,
+        92,
+        16,
+        194,
+        145
       ]
     },
     {
@@ -44679,6 +44700,57 @@ export type Perpetuals = {
       }
     },
     {
+      "name": "basketLedgerErLog",
+      "docs": [
+        "Emitted by the ER trade instructions whenever funds move between a user's",
+        "tradeable basket balance and an open trade: collateral/reserve pulled out of",
+        "the basket into a trade (`debit_amount`), or a settlement/payout returned to",
+        "the basket out of a trade (`credit_amount`). Exactly one side is non-zero.",
+        "",
+        "Complements the base-chain `DepositDirectBaseLog` / `WithdrawalSettleBaseLog`",
+        "(which track the `user_deposit_ledger`): together they let a consumer follow",
+        "the full lifecycle deposit → basket → trade → basket → withdrawal."
+      ],
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "owner",
+            "type": "pubkey"
+          },
+          {
+            "name": "basket",
+            "type": "pubkey"
+          },
+          {
+            "name": "tokenMint",
+            "type": "pubkey"
+          },
+          {
+            "name": "debitAmount",
+            "docs": [
+              "Amount debited from the basket into a trade (collateral / reserve in)."
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "creditAmount",
+            "docs": [
+              "Amount credited back to the basket from a trade (settlement / payout out)."
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "opType",
+            "docs": [
+              "Source instruction — maps to `BasketLedgerErType`."
+            ],
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
       "name": "basketOrder",
       "type": {
         "kind": "struct",
@@ -47773,6 +47845,18 @@ export type Perpetuals = {
             "type": "u64"
           },
           {
+            "name": "outputAmount",
+            "docs": [
+              "Amount credited to the owner's basket (in `output_custody_uid` token) for",
+              "this partial close — the settled payout, mirroring close_position_er."
+            ],
+            "type": "u64"
+          },
+          {
+            "name": "outputCustodyUid",
+            "type": "u8"
+          },
+          {
             "name": "padding",
             "type": {
               "array": [
@@ -50676,6 +50760,13 @@ export type Perpetuals = {
           {
             "name": "outputAmount",
             "type": "u64"
+          },
+          {
+            "name": "outputCustodyUid",
+            "docs": [
+              "Custody (token) the `output_amount` was credited to the basket in."
+            ],
+            "type": "u8"
           },
           {
             "name": "padding",
@@ -56221,6 +56312,13 @@ export type Perpetuals = {
           {
             "name": "receiveAmount",
             "type": "u64"
+          },
+          {
+            "name": "outputCustodyUid",
+            "docs": [
+              "Custody (token) the `receive_amount` was credited to the basket in."
+            ],
+            "type": "u8"
           },
           {
             "name": "oracleAccountTime",

@@ -9,7 +9,6 @@ import {
   ENV,
   amount,
   custodyBySymbol,
-  pickMarket,
   entryPrice,
   sendBase,
   sendEr,
@@ -261,11 +260,19 @@ async function stakedRemove(ctx: Ctx, symbol: string, amt: BN) {
 function marketBySide(ctx: Ctx, targetSymbol: string, wantSide: "long" | "short") {
   const pc = ctx.poolConfig;
   const target = custodyBySymbol(pc, targetSymbol);
-  const m = pc.markets.find(
+  const candidates = pc.markets.filter(
     (x: any) =>
       x.targetCustody.equals(target.custodyAccount) && Object.keys(x.side)[0] === wantSide,
   );
-  if (!m) throw new Error(`no ${wantSide} market for ${targetSymbol}`);
+  if (!candidates.length) throw new Error(`no ${wantSide} market for ${targetSymbol}`);
+  let m = candidates[0];
+  if (candidates.length > 1) {
+    // Multiple markets for this (target, side) — pick the one whose collateral
+    // matches the SDK override (e.g. SOL long → JitoSOL).
+    const wantSym = ctx.client.resolveCollateralSymbol(targetSymbol, targetSymbol, m.side as any);
+    const want = custodyBySymbol(pc, wantSym);
+    m = candidates.find((x: any) => x.collateralCustody.equals(want.custodyAccount)) ?? m;
+  }
   const collateral = pc.custodies.find((c: any) => c.custodyAccount.equals(m.collateralCustody))!;
   return { market: m.marketAccount as PublicKey, side: (m as any).side, collateralSymbol: collateral.symbol };
 }
@@ -385,9 +392,23 @@ async function run() {
       "\n       (relevant view/quote functions are called at each stage)",
   );
 
-  const { market, side, collateralSymbol: marketCollateral } = pickMarket(ctx.poolConfig);
+  // Select the market by explicit side (SIDE=long|short, default long). marketBySide
+  // is override-aware: for a SOL long it auto-selects the JitoSOL-collateral market.
+  // `marketCollateral` is the on-chain collateral custody (JitoSOL for SOL long);
+  // the end user never has to name it.
+  const wantSide = (process.env.SIDE as "long" | "short") || "long";
+  const { market, side, collateralSymbol: marketCollateral } = marketBySide(
+    ctx,
+    targetSymbol,
+    wantSide,
+  );
+  // The token the user actually funds/settles in — their deposit-ledger token
+  // (USDC). It can differ from the market collateral custody; the program swaps
+  // it into/out of the collateral custody under the hood, so trading is abstract:
+  // fund USDC → SOL long is collateralised in JitoSOL automatically.
+  const fundingSymbol = collateralSymbol;
   console.log(
-    `MARKET: ${targetSymbol} ${Object.keys(side)[0]} · collateral=${marketCollateral} · deposit/LP token=${collateralSymbol}`,
+    `MARKET: ${targetSymbol} ${Object.keys(side)[0]} · collateral=${marketCollateral} · fund/settle token=${fundingSymbol}`,
   );
 
   // ── SECTION 1 — protocol reads + global views ──────────────────────────
@@ -543,7 +564,7 @@ async function run() {
       );
       if (!active.length) return SKIP("already flat");
       const price = await entryPrice(ctx, targetSymbol, side, false);
-      const res = await ctx.client.closePosition(targetSymbol, marketCollateral, side, ctx.poolConfig, price);
+      const res = await ctx.client.closePosition(targetSymbol, marketCollateral, side, ctx.poolConfig, price, fundingSymbol);
       const sent = logSent(await sendEr(ctx, res, [session]));
       return "signature" in sent ? sent : SKIP("dry-run");
     },
@@ -558,8 +579,8 @@ async function run() {
     ctx.client.views.getOpenPositionQuote(ctx.poolConfig, {
       market,
       targetSymbol,
-      collateralSymbol: marketCollateral,
-      receivingSymbol: marketCollateral,
+      collateralSymbol: marketCollateral, // on-chain collateral custody (e.g. JitoSOL)
+      receivingSymbol: fundingSymbol, // what the user funds with (USDC) — swapped in
       amountIn: tradeCollateral,
       leverage: new BN(20000), // 2.0000 (BPS_DECIMALS=4)
     }),
@@ -571,8 +592,8 @@ async function run() {
     const price = await entryPrice(ctx, targetSymbol, side, true);
     const res = await ctx.client.openPosition(
       targetSymbol,
-      marketCollateral,
-      marketCollateral,
+      marketCollateral, // lock symbol — SDK forces the collateral custody (JitoSOL for SOL long)
+      fundingSymbol, // funding/receiving token (USDC) — swapped into the collateral custody
       side,
       ctx.poolConfig,
       price,
@@ -634,14 +655,18 @@ async function run() {
     if (!meta) return SKIP("position not in basket");
     return ctx.client.views.getClosePositionQuoteEr(ctx.poolConfig, {
       ...erPosViewArgs,
-      dispensingSymbol: marketCollateral,
+      dispensingSymbol: fundingSymbol, // settle back to the user's token (USDC)
       sizeDeltaUsd: meta.position.sizeUsd, // full close
     });
   });
 
+  // For the lifecycle ops the 2nd arg resolves the market (SDK forces the JitoSOL
+  // collateral custody for a SOL long); the trailing receiving/dispensing symbol
+  // is the user's funding token (USDC), so they fund/settle in USDC throughout and
+  // never touch JitoSOL — the program swaps in/out of the collateral custody.
   await step("addCollateral", async () => {
     if (!positionOpen) return SKIP("no open position");
-    const res = await ctx.client.addCollateral(targetSymbol, marketCollateral, side, ctx.poolConfig, tradeCollateral);
+    const res = await ctx.client.addCollateral(targetSymbol, marketCollateral, side, ctx.poolConfig, tradeCollateral, fundingSymbol);
     const sent = logSent(await sendEr(ctx, res, [session]));
     return "signature" in sent ? sent : SKIP("dry-run");
   }, { optional: true });
@@ -649,7 +674,7 @@ async function run() {
   await step("increasePositionSize", async () => {
     if (!positionOpen) return SKIP("no open position");
     const price = await entryPrice(ctx, targetSymbol, side, true);
-    const res = await ctx.client.increasePositionSize(targetSymbol, marketCollateral, side, ctx.poolConfig, price, sizeStep, tradeCollateral);
+    const res = await ctx.client.increasePositionSize(targetSymbol, marketCollateral, side, ctx.poolConfig, price, sizeStep, tradeCollateral, fundingSymbol);
     const sent = logSent(await sendEr(ctx, res, [session]));
     return "signature" in sent ? sent : SKIP("dry-run");
   }, { optional: true });
@@ -658,14 +683,14 @@ async function run() {
     if (!positionOpen) return SKIP("no open position");
     await sleep(settleMs); // clear the `curtime > update_time` guard (err 6031)
     const price = await entryPrice(ctx, targetSymbol, side, false);
-    const res = await ctx.client.decreasePositionSize(targetSymbol, marketCollateral, side, ctx.poolConfig, price, sizeStep);
+    const res = await ctx.client.decreasePositionSize(targetSymbol, marketCollateral, side, ctx.poolConfig, price, sizeStep, fundingSymbol);
     const sent = logSent(await sendEr(ctx, res, [session]));
     return "signature" in sent ? sent : SKIP("dry-run");
   }, { optional: true });
 
   await step("removeCollateral", async () => {
     if (!positionOpen) return SKIP("no open position");
-    const res = await ctx.client.removeCollateral(targetSymbol, marketCollateral, side, ctx.poolConfig, tradeCollateral);
+    const res = await ctx.client.removeCollateral(targetSymbol, marketCollateral, side, ctx.poolConfig, tradeCollateral, fundingSymbol);
     const sent = logSent(await sendEr(ctx, res, [session]));
     return "signature" in sent ? sent : SKIP("dry-run");
   }, { optional: true });
@@ -674,7 +699,7 @@ async function run() {
     if (!positionOpen) return SKIP("no open position");
     await sleep(settleMs); // clear the `curtime > update_time` guard (err 6031)
     const price = await entryPrice(ctx, targetSymbol, side, false);
-    const res = await ctx.client.closePosition(targetSymbol, marketCollateral, side, ctx.poolConfig, price);
+    const res = await ctx.client.closePosition(targetSymbol, marketCollateral, side, ctx.poolConfig, price, fundingSymbol);
     const sent = logSent(await sendEr(ctx, res, [session]));
     return "signature" in sent ? sent : SKIP("dry-run");
   });

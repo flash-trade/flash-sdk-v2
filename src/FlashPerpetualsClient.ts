@@ -116,6 +116,25 @@ import { buildCollectRebateEr, CollectRebateErArgs } from "./instructions/rebate
 import { buildCollectRebateSettle, CollectRebateSettleArgs } from "./instructions/rebates/collectRebateSettle";
 
 // =========================================================================
+// Collateral overrides
+// =========================================================================
+
+/**
+ * Per-target collateral overrides for LONG positions: `targetSymbol → collateral
+ * symbol`. A long here locks the override token as collateral instead of the
+ * symbol the caller passed.
+ *
+ * SOL longs use JitoSOL (a yield-bearing LST) as collateral rather than plain
+ * SOL/WSOL — the on-chain "SOL Long" market is keyed on the JitoSOL custody, so
+ * the market PDA, lock custody, and collateral custody must all resolve to
+ * JitoSOL. Shorts and every other market are unaffected.
+ */
+const LONG_COLLATERAL_OVERRIDES: Record<string, string> = {
+  SOL: "JitoSOL",
+  WSOL: "JitoSOL",
+};
+
+// =========================================================================
 // Types
 // =========================================================================
 
@@ -348,7 +367,35 @@ export class FlashPerpetualsClient {
     return { targetCustodyConfig, lockCustodyConfig };
   }
 
-  /** Find a market config from target symbol, lock symbol, and side. */
+  /**
+   * Resolve the effective collateral/lock symbol for a position, applying any
+   * per-target LONG override (e.g. SOL longs lock JitoSOL). Shorts and targets
+   * without an override pass through unchanged. Idempotent — passing an already
+   * overridden symbol (e.g. "JitoSOL") returns it as-is.
+   */
+  public resolveCollateralSymbol(
+    targetSymbol: string,
+    collateralSymbol: string,
+    side: Side,
+  ): string {
+    if (isVariant(side, "long")) {
+      const override = LONG_COLLATERAL_OVERRIDES[targetSymbol];
+      if (override) return override;
+    }
+    return collateralSymbol;
+  }
+
+  /**
+   * Find a market config from target symbol, lock symbol, and side.
+   *
+   * NOTE: this resolves the market from the lock symbol AS PASSED — it does NOT
+   * apply the LONG collateral override. That is deliberate: close / addCollateral /
+   * decrease / removeCollateral all address an EXISTING position via its actual
+   * collateral custody, so a legacy SOL-long opened against the WSOL-collateral
+   * market must still resolve to that market. The override is applied only when
+   * OPENING a new position (see `openPosition`, which pre-resolves the lock symbol
+   * via `resolveCollateralSymbol`).
+   */
   public findMarketConfig(
     poolConfig: PoolConfig,
     targetSymbol: string,
@@ -657,7 +704,10 @@ export class FlashPerpetualsClient {
    *
    * @param targetSymbol     The asset being traded.
    * @param lockSymbol       The market's lock custody (determines the market PDA).
-   * @param collateralSymbol The token the user is paying with / receiving custody.
+   *                         For a SOL long this is overridden to JitoSOL.
+   * @param collateralSymbol The token the user funds with (receiving custody). Left
+   *                         as-is — if it differs from the lock custody the program
+   *                         swaps it in (e.g. fund USDC → JitoSOL-collateral SOL long).
    * @param side             Long or Short.
    * @param priceWithSlippage Slippage-bounded oracle price for the entry.
    */
@@ -674,8 +724,22 @@ export class FlashPerpetualsClient {
     referralAccount?: PublicKey,
     tokenStakeAccount?: PublicKey,
   ): Promise<InstructionResult> => {
+    // Apply the per-target LONG collateral override (e.g. SOL long → JitoSOL) to
+    // the LOCK custody only: it picks the market PDA and the locked collateral.
+    // The funding/receiving token (`collateralSymbol`) is left untouched so the
+    // caller can fund with anything (e.g. USDC) and let the program swap it into
+    // the lock custody.
+    const effectiveLockSymbol = this.resolveCollateralSymbol(
+      targetSymbol,
+      lockSymbol,
+      side,
+    );
+
     const targetCustodyConfig = this.getCustodyConfigBySymbol(poolConfig, targetSymbol);
-    const lockCustodyConfig = this.getCustodyConfigBySymbol(poolConfig, lockSymbol);
+    const lockCustodyConfig = this.getCustodyConfigBySymbol(
+      poolConfig,
+      effectiveLockSymbol,
+    );
     const collateralCustodyConfig = this.getCustodyConfigBySymbol(
       poolConfig,
       collateralSymbol,
@@ -684,7 +748,7 @@ export class FlashPerpetualsClient {
     const marketConfig = this.findMarketConfig(
       poolConfig,
       targetSymbol,
-      lockSymbol,
+      effectiveLockSymbol,
       side,
     );
 

@@ -104,16 +104,74 @@ export function custodyBySymbol(pc: PoolConfig, symbol: string): CustodyConfig {
 /** Pick a real market for `targetSymbol` and derive its side + collateral.
  *  Prefers the market whose collateral custody matches COLLATERAL_SYMBOL —
  *  trades draw from the deposit ledger, which only holds what you deposited. */
-export function pickMarket(pc: PoolConfig, targetSymbol = ENV.targetSymbol) {
+export function pickMarket(
+  pc: PoolConfig,
+  targetSymbol = ENV.targetSymbol,
+  client?: FlashPerpetualsClient,
+) {
   const target = custodyBySymbol(pc, targetSymbol);
   const wantCollateral = custodyBySymbol(pc, ENV.collateralSymbol);
   const candidates = pc.markets.filter((x) =>
     x.targetCustody.equals(target.custodyAccount),
   );
-  const m =
+  let m =
     candidates.find((x) => x.collateralCustody.equals(wantCollateral.custodyAccount)) ??
     candidates[0];
   if (!m) throw new Error(`no market for ${targetSymbol}`);
+  // Honour the SDK LONG collateral override (e.g. SOL long → JitoSOL) so the
+  // picked market matches the one the client will trade against. Only kicks in
+  // when a `client` is supplied and a same-side override market exists.
+  if (client) {
+    const wantSym = client.resolveCollateralSymbol(targetSymbol, targetSymbol, m.side as Side);
+    const want = custodyBySymbol(pc, wantSym);
+    if (!m.collateralCustody.equals(want.custodyAccount)) {
+      m =
+        candidates.find(
+          (x) =>
+            Object.keys(x.side)[0] === Object.keys(m.side)[0] &&
+            x.collateralCustody.equals(want.custodyAccount),
+        ) ?? m;
+    }
+  }
+  const collateral = pc.custodies.find((c) =>
+    c.custodyAccount.equals(m.collateralCustody),
+  )!;
+  return {
+    market: m.marketAccount,
+    side: m.side as Side,
+    collateralSymbol: collateral.symbol,
+  };
+}
+
+/** Resolve the market for an explicit (targetSymbol, side), honouring the SDK's
+ *  per-target LONG collateral override. SOL/WSOL have two long markets (plain
+ *  SOL-collateral and JitoSOL-collateral); the override disambiguates to the
+ *  JitoSOL one so the script and the client agree on the same market PDA. */
+export function marketForSide(
+  ctx: Ctx,
+  targetSymbol: string,
+  side: "long" | "short",
+) {
+  const pc = ctx.poolConfig;
+  const target = custodyBySymbol(pc, targetSymbol);
+  const candidates = pc.markets.filter(
+    (x) =>
+      x.targetCustody.equals(target.custodyAccount) &&
+      Object.keys(x.side)[0] === side,
+  );
+  if (!candidates.length) throw new Error(`no ${side} market for ${targetSymbol}`);
+  let m = candidates[0];
+  if (candidates.length > 1) {
+    // Multiple markets for this (target, side) — pick the one whose collateral
+    // matches the SDK override (e.g. SOL long → JitoSOL).
+    const wantSym = ctx.client.resolveCollateralSymbol(
+      targetSymbol,
+      targetSymbol,
+      m.side as Side,
+    );
+    const want = custodyBySymbol(pc, wantSym);
+    m = candidates.find((x) => x.collateralCustody.equals(want.custodyAccount)) ?? m;
+  }
   const collateral = pc.custodies.find((c) =>
     c.custodyAccount.equals(m.collateralCustody),
   )!;
