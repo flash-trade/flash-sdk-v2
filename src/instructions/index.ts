@@ -112,6 +112,7 @@ export * from "./admin/addInternalOracle";
 export * from "./admin/addMarketEr";
 export * from "./admin/addPool";
 export * from "./admin/batchDelegateTokenStake";
+export * from "./admin/batchDelegateTrading";
 export * from "./admin/collectStakeFees";
 export * from "./admin/createWhitelist";
 export * from "./admin/delegateRebateVault";

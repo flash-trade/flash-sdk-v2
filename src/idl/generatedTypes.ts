@@ -361,6 +361,20 @@ export interface BatchDelegateTokenStakeUserLog {
   owner: PublicKey;
 }
 
+export interface BatchDelegateTradingLog {
+  processed: number;
+  skipped: number;
+}
+
+export interface BatchDelegateTradingParams {
+}
+
+export interface BatchDelegateTradingUserLog {
+  trading: PublicKey;
+  nftMint: PublicKey;
+  owner: PublicKey;
+}
+
 export interface BorrowRateParams {
   baseRate: BN;
   slope1: BN;

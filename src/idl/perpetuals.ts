@@ -3595,6 +3595,109 @@ export type Perpetuals = {
       "returns": "u8"
     },
     {
+      "name": "batchDelegateTrading",
+      "discriminator": [
+        246,
+        138,
+        169,
+        82,
+        103,
+        183,
+        58,
+        247
+      ],
+      "accounts": [
+        {
+          "name": "admin",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "multisig",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  109,
+                  117,
+                  108,
+                  116,
+                  105,
+                  115,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "ownerProgram",
+          "docs": [
+            "our program ID; the `delegate_account` CPI uses this to compute the PDA",
+            "bump via `find_program_address`."
+          ],
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
+        },
+        {
+          "name": "delegationProgram",
+          "docs": [
+            "delegated PDA inside the CPI."
+          ],
+          "address": "DELeGGvXpWV2fqJUhqcF5ZSYMS4JTLjteaAMARRSaeSh"
+        },
+        {
+          "name": "systemProgram",
+          "address": "11111111111111111111111111111111"
+        },
+        {
+          "name": "eventAuthority",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  95,
+                  95,
+                  101,
+                  118,
+                  101,
+                  110,
+                  116,
+                  95,
+                  97,
+                  117,
+                  116,
+                  104,
+                  111,
+                  114,
+                  105,
+                  116,
+                  121
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "program",
+          "address": "FTPP4jEWW1n8s2FEccwVfS9KCPjpndaswg7Nkkuz4ER4"
+        }
+      ],
+      "args": [
+        {
+          "name": "params",
+          "type": {
+            "defined": {
+              "name": "batchDelegateTradingParams"
+            }
+          }
+        }
+      ],
+      "returns": "u8"
+    },
+    {
       "name": "cancelAllTriggerOrdersEr",
       "discriminator": [
         12,
@@ -40527,6 +40630,32 @@ export type Perpetuals = {
       ]
     },
     {
+      "name": "batchDelegateTradingLog",
+      "discriminator": [
+        84,
+        40,
+        120,
+        60,
+        33,
+        99,
+        99,
+        95
+      ]
+    },
+    {
+      "name": "batchDelegateTradingUserLog",
+      "discriminator": [
+        207,
+        24,
+        57,
+        138,
+        69,
+        133,
+        111,
+        174
+      ]
+    },
+    {
       "name": "burnAndClaimLog",
       "discriminator": [
         31,
@@ -44894,6 +45023,49 @@ export type Perpetuals = {
     },
     {
       "name": "batchDelegateTokenStakeParams",
+      "type": {
+        "kind": "struct",
+        "fields": []
+      }
+    },
+    {
+      "name": "batchDelegateTradingLog",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "processed",
+            "type": "u32"
+          },
+          {
+            "name": "skipped",
+            "type": "u32"
+          }
+        ]
+      }
+    },
+    {
+      "name": "batchDelegateTradingUserLog",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "trading",
+            "type": "pubkey"
+          },
+          {
+            "name": "nftMint",
+            "type": "pubkey"
+          },
+          {
+            "name": "owner",
+            "type": "pubkey"
+          }
+        ]
+      }
+    },
+    {
+      "name": "batchDelegateTradingParams",
       "type": {
         "kind": "struct",
         "fields": []
