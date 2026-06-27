@@ -1,0 +1,56 @@
+import { Program } from "@coral-xyz/anchor";
+import { PublicKey, SystemProgram, SYSVAR_INSTRUCTIONS_PUBKEY } from "@solana/web3.js";
+import { TOKEN_2022_PROGRAM_ID, TOKEN_PROGRAM_ID } from "@solana/spl-token";
+import { InstructionResult } from "../../types";
+import { delegatedAccountFragment, sharedDelegationAccounts } from "../../utils/delegation";
+import {
+  findCollectTokenRewardReceiptAddress,
+  findTokenStakeAddress,
+  findTokenVaultAddress,
+  findTokenVaultTokenAccountAddress,
+  findTransferAuthorityAddress,
+  findPerpetualsAddress,
+  findEventAuthorityAddress,
+} from "../../utils";
+
+export interface CollectTokenRewardWithActionArgs {
+  tokenMint: PublicKey; // reward (governance) token mint
+  receivingTokenAccount: PublicKey; // user ATA of the reward mint
+  owner?: PublicKey;
+  token22?: boolean;
+}
+
+/** collect_token_reward_with_action — delegates the reward receipt to the ER; a
+ *  keeper (or `collectTokenRewardEr`) drives the ER claim + settle. Only
+ *  the receipt is delegated (the token_stake account is read directly). */
+export async function buildCollectTokenRewardWithAction(
+  program: Program,
+  args: CollectTokenRewardWithActionArgs,
+): Promise<InstructionResult> {
+  const owner = args.owner ?? program.provider.publicKey!;
+
+  const receipt = findCollectTokenRewardReceiptAddress(owner, program.programId)[0];
+
+  const ix = await program.methods
+    .collectTokenRewardWithAction({})
+    .accountsPartial({
+      owner,
+      tokenVault: findTokenVaultAddress(program.programId)[0],
+      tokenVaultTokenAccount: findTokenVaultTokenAccountAddress(program.programId)[0],
+      tokenMint: args.tokenMint,
+      tokenStakeAccount: findTokenStakeAddress(owner, program.programId)[0],
+      transferAuthority: findTransferAuthorityAddress(program.programId)[0],
+      receivingTokenAccount: args.receivingTokenAccount,
+      perpetuals: findPerpetualsAddress(program.programId)[0],
+      ...delegatedAccountFragment(program.programId, "receipt", receipt),
+      tokenProgram: args.token22 ? TOKEN_2022_PROGRAM_ID : TOKEN_PROGRAM_ID,
+      systemProgram: SystemProgram.programId,
+      eventAuthority: findEventAuthorityAddress(program.programId)[0],
+      program: program.programId,
+      ixSysvar: SYSVAR_INSTRUCTIONS_PUBKEY,
+      ...sharedDelegationAccounts(program.programId),
+    })
+    .instruction();
+
+  return { instructions: [ix], additionalSigners: [] };
+}

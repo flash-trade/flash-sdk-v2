@@ -1,0 +1,13 @@
+node_modules
+dist
+
+# deploy-scripts review artifact (regenerate with genPoolConfig.ts)
+src/PoolConfig.generated.json
+
+# yarn 4 (berry) — global cache enabled, so nothing local to commit
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+.pnp.*

@@ -1,0 +1,23 @@
+{
+  // Editor + runner project for the example scripts. Not part of `yarn build`
+  // (../tsconfig.json compiles only src/). Run examples with tsx, which honors
+  // the `paths` alias below: `npx tsx examples/trade/openPosition.ts`.
+  //
+  // The `paths` alias is the key trick — examples import the SDK by its package
+  // name (@flash_trade/flash-sdk-v2) but resolve to local ../src when run inside
+  // this repo (no build needed, always fresh). An outside consumer who copies an
+  // example into their own project doesn't inherit this config, so the same
+  // import falls back to their installed npm package. One source, both worlds.
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "..",
+    "baseUrl": ".",
+    "noEmit": true,
+    "types": ["node"],
+    "paths": {
+      "@flash_trade/flash-sdk-v2": ["../src/index.ts"],
+      "@flash_trade/flash-sdk-v2/*": ["../src/*"]
+    }
+  },
+  "include": ["./**/*"]
+}
