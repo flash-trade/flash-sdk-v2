@@ -1,0 +1,15 @@
+{
+  // Editor-only project for the app/-style runner scripts. They aren't part of
+  // the published build (../tsconfig.json includes only src/), so without this
+  // the editor type-checks them as a loose "inferred project" and resolves
+  // @types/bn.js from a sibling package (app/) instead of client-v2's own,
+  // producing a spurious BN type-mismatch. Rooting them here pins resolution to
+  // client-v2/node_modules. Not used by `yarn build`.
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "..",
+    "noEmit": true,
+    "types": ["node"]
+  },
+  "include": ["./**/*"]
+}
