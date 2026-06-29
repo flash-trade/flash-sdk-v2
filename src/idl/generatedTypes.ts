@@ -3752,6 +3752,7 @@ export interface SetTokenVaultConfigErParams {
   withdrawInstantFee: BN;
   stakeLevel: BN[];
   unlockPeriod: BN;
+  allowRevenueDistribution: number;
 }
 
 export interface SetTokenVaultConfigParams {

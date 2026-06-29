@@ -58312,6 +58312,10 @@ export type Perpetuals = {
           {
             "name": "unlockPeriod",
             "type": "i64"
+          },
+          {
+            "name": "allowRevenueDistribution",
+            "type": "u8"
           }
         ]
       }

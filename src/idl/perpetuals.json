@@ -58306,6 +58306,10 @@
           {
             "name": "unlock_period",
             "type": "i64"
+          },
+          {
+            "name": "allow_revenue_distribution",
+            "type": "u8"
           }
         ]
       }

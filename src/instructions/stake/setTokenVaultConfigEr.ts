@@ -16,6 +16,7 @@ export interface SetTokenVaultConfigErParams {
   withdrawInstantFee: BN;
   stakeLevel: BN[];
   unlockPeriod: BN;
+  allowRevenueDistribution: number;
 }
 
 /** set_token_vault_config_er — direct-ER admin write to the delegated token vault. */
