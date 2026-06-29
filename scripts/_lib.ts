@@ -244,6 +244,7 @@ export async function loadPoolAlts(ctx: Ctx): Promise<AddressLookupTableAccount[
 export async function sendBase(
   ctx: Ctx,
   res: { instructions: any[]; additionalSigners?: any[] },
+  opts: Record<string, any> = {},
 ) {
   if (process.env.SEND !== "1")
     return { dryRun: true, instructionCount: res.instructions.length };
@@ -254,6 +255,8 @@ export async function sendBase(
       skipPreflight,
       // Attach the pool ALTs so large account sets fit the legacy tx limit.
       alts: await loadPoolAlts(ctx),
+      // Caller overrides (e.g. prioritizationFee: 0 to drop the compute-price ix).
+      ...opts,
     });
   } catch (e) {
     throw attachTxMeta(e, false);
@@ -270,6 +273,7 @@ export async function sendEr(
   ctx: Ctx,
   res: { instructions: any[] },
   signers: Keypair[],
+  opts: Record<string, any> = {},
 ) {
   if (process.env.SEND !== "1")
     return { dryRun: true, instructionCount: res.instructions.length };
@@ -278,6 +282,8 @@ export async function sendEr(
     result = await ctx.client.sendAndConfirmErTransaction(
       res.instructions,
       signers,
+      // Caller overrides (e.g. computeUnitLimit: null to drop the CU-limit ix).
+      opts,
     );
   } catch (e) {
     throw attachTxMeta(e, true);
